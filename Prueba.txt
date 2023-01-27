@@ -1,0 +1,3 @@
+Probando creación de directorio con mkdir
+Probando creación de archivo con touch
+Probar el comando cat.
