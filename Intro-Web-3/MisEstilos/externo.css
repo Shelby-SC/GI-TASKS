@@ -1,9 +1,10 @@
 h1{
-    text-align: justify;
+    text-align: center;
     background-color: bisque;
+    color: rgb(241, 134, 152);
 }
 
 h2{
-    text-align: left;
+    text-align: center;
     color: cadetblue;
 }

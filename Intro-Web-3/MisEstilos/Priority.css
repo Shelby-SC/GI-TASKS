@@ -1,0 +1,10 @@
+#dato0{
+    color: aqua;
+    font-size: 40px;
+}
+/* Añadimos los de "class" con el "." en el CSS */
+.pato{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align-last: right;
+    background-color: bisque;
+}
