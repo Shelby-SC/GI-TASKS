@@ -1,0 +1,26 @@
+Vínculos de anclaje {
+
+Ancla no es lo mismo que hipervínculo.
+
+<!-- Éste es un ejemplo de anclaje-->
+
+<!--Agregar una identificación con un nombre de anclaje-->
+<a id="nombre-anclaje"> Aquí el nombre de la sección a la que quieres brincar </a>
+<!--Un anclaje en una cabecera-->
+<h2 id="nombre-anclaje">Nombre de la sección</h2>
+<!--Anclaje en una imagen-->
+<img id="nombre-anclaje" src="./Assets/July_Owen.jpg"/>
+<!--anclaje en un párrafo-->
+<p id="nombre-anclaje">Nombre del párrafo</p>
+<!--Crear un hipervínculo utilizando el identificador del objetivo del vínculo, precedido por #-->
+<a href="#nombre-anclaje">Brincar a la parte de la página con “nombre-anclaje” id </a>
+
+FORMULARIOS Y TIPOS DE ENTRADA {
+
+Elemento que más lo representa es el input
+Elemento form: Es usado para recolectar informacion de los usuarios del sitio, tambien es importante el acceso a sitios web. Aquí hay dos importantes:
+Action
+Method: indica como el navegador debe adjuntar los datos del usuario a la petición.
+
+
+

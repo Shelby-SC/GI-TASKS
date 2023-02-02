@@ -1,0 +1,21 @@
+table,
+td {
+    border: 1px solid #333;
+}
+
+thead,
+tfoot {
+    background-color: #333;
+    color: #fff;
+}
+
+
+#encabezado{
+    background-color: chartreuse;
+    color: crimson;
+    text-align: center;
+}
+h1{
+    background-color: burlywood;
+    color:brown
+}
