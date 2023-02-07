@@ -29,7 +29,7 @@ h1 span{
 }
 
 .container {
-    text-align: center;
+    text-align: left;
     max-width: 800px;
     background-color:rgb(240, 212, 174);
     margin-top: 50px;
@@ -54,8 +54,164 @@ h1 span{
 .menu ul li a {
     background: orange;
     color: black;
-    font-size: 10px;
+    font-size: 11px;
     text-decoration: none;
     display: block;
-    padding: 3px;
+    padding: 2px; /*Esta propiedad sirve para engrosar, digamos, el marco interno de los elementos*/
 }
+
+
+/*La propiedad position, positioned in a document. The top, right, bottom, and left properties determine the final location of positioned elements.*/ 
+.menu ul li ul{
+    position: absolute; /* El valor absoluto, determina la distancia entre el borde superior del elemento y el borde superior del bloque que lo contiene */
+    top:25px; /*participa en la especificación de la posición vertical de un elemento posicionado . No tiene efecto sobre elementos no posicionados.top*/
+    left: 0;
+    list-style-type: none; /* Esta propiedad retira las viñetas de las listas, cuando el valor es none.*/
+    display: none; /*Esto es para elegir si queremos que se muestre en linea, en bloque, etc. Si es "none" estamos diciendo que se van a alinear tal y como están en lista */
+    height: auto; /*Especifica la altura de un elemento, por defecto, la propiedad define la altura del área de contenido, sin embargo en box-sizing está configurado como border-box, determina la altura del área de borde*/
+
+}
+
+.menu ul li:hover ul{
+    display: block;
+}
+
+.menu ul li ul li{ /*En esta sección, estamos modificando la apariencia de los bloques al desplegarse*/
+    display: block; 
+    width: 60px; /*Este es el ancho de la casilla o bloque de los elementos desplegables*/
+    height: 20px; /*Esto es que tanta separacion hay al desplegarse*/
+    margin: 0;
+    text-align: left; /*Esto es para la alineación del texto del elemento desplegable*/
+}
+
+/* Para hacer comentarios, usar en el teclado: ctrl + K + U */
+/* También funciona CTRL + K + C */
+/* También funciona para comentar o descomentar CTRL + } */
+
+/* CLEARFIX: La forma en que ésta situación se ha tratado tradicionalmente es utilizando este truco. Inserta algun contenido generado despues del cuadro que contiene el contenido flotante y envolvente, y configurarlo para limpiar antes*/
+
+/* Fin de header */
+h2 {
+    color: orangered;
+    text-transform: uppercase;
+    text-align: left;
+}
+
+h2::before {  /* Esto sirve para añadir elementos en el título, parrafos y demás, pueden ser íconos, imágenes o símbolos*/
+    content: "// ";
+}
+
+p{
+    text-align: left;
+}
+
+.clearfix:before {
+    display: table;
+    line-height: 1.5;
+    content: "";
+}
+
+.pull-flex{
+    float: left;
+}
+
+.row {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+/*Con esto podemos arrimar todo un texto hacia un lado*/
+.col-60 {
+    width: 60%;
+}
+
+.col-10{
+    width: 10%;
+}
+
+.col-40{
+    width: 40%;
+}
+
+.col-90{
+    width: 90%;
+}
+
+.containerflex{
+        display: flex; 
+}
+
+.education ul{
+    list-style: none;
+    margin:0;
+    padding: 0; 
+}
+    .education .year {
+        font-size: 1.1em;
+        font-weight: bold;
+    }
+    
+    .education .description {
+        background: #EEEEEE;
+        border-bottom: 1px solid #DDDDDD;
+        padding: 10px;
+        margin-bottom: 10px;
+        position: relative;
+        box-sizing: border-box; 
+    }
+
+    .education .description h3, 
+    .education .description p{
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    .education .description p::after {
+        content: "";
+        position: absolute;
+        border: 8px solid transparent ;
+        border-right: 8px solid #EEEEEE ;
+        top: 5px;
+        left: -16px;
+    }
+
+    /* ---------- EXPERIENCIA ---------- */
+
+    .experience .job .place{
+        font-size: 1.1em;
+        font-weight: bold;
+    }
+
+   .year{
+        font-size: 0.8em;
+   }
+
+   .profession{
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 3em;
+    font-size: 0.9em;
+    text-align: justify;
+   }
+
+   .description{
+    margin-top: 0;
+    margin-left: 3em;
+    text-align: justify;
+   }
+
+   .containerskill{
+    width: 100%;
+    background-color: #DDDDDD;
+   }
+
+   .skills {
+    text-align: right;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+   }
+
+   .html{ width: 90%; background-color: green; }
+    .css {width: 80%; background-color: blue }
+    .js {width: 65% background-color: red }
+    .python {width: 60%; background-color: aqua; }
