@@ -1,0 +1,132 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    background:antiquewhite;
+}
+
+#photo-header{
+    text-align: center;
+}
+#photo img{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 4px solid;
+    border-color: black;
+}
+
+h1{
+    text-align: center;
+    text-transform: uppercase;
+}
+
+h1 span{
+    color: orangered;
+}
+
+
+.container {
+    margin: auto;
+    width: 80%;
+    background-color: bisque;
+    margin-top: 50px auto 30px auto;
+}
+
+/* Ésto sirve para ponerle estilo a las listas, empieza a ser un bloque pero no tan definido */
+.menu ul{
+    list-style-type: none;
+    text-align: center;
+    padding: 0;
+    margin: auto;
+}
+
+.menu ul li{
+    display: inline-block;
+    position: relative;
+}
+
+/* Recordemos que tenemos un "nav" que rige en toda la lista sea ul y li. */
+
+.menu ul li a{
+    display: block;
+    padding: 2px;
+    background-color: orange;
+    text-align: center;
+    font-size: 12px;
+    color: black;
+    top: 0;
+    text-decoration: none;
+}
+
+.menu ul li ul {
+    position: absolute;
+    top: 25px;
+    left: 0;
+    display: none; /*Cuando puse este, en seguida se guardaron los paneles que asoman cuando se hace hover sobre ellos */
+    height: auto;
+
+
+}
+
+.menu ul li:hover ul{
+    display: flex; /* ¿Por qué flex? */
+    flex-direction: column; /*¿Para qué sirve?*/
+    width: max-content; /* ¿Para qué sirve?, al parece acomoda automáticamente hasta que el texto se vea bien cuando se despliega */
+    float: left;
+}
+
+/* ¿Esto para qué sirve */
+
+.menu ul li ul li a:hover{
+    background-color: aquamarine;
+}
+
+/* Comienza estilo de la <section */
+
+section{
+    display: flex;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+h2 {
+    color: orangered;
+    text-transform: uppercase;
+}
+
+p {
+    padding: 5px 10px 5px 20px;
+    text-align: justify;
+    margin-bottom: auto;
+}
+
+#Acerca {  /*¿En qué orden va esto y como afecta: top, right, bottom y left, por las manecillas del reloj */
+    margin: 0 10px 20px 5px;
+}
+
+
+#year {
+    display: flex;
+    align-items: flex-start;
+}
+
+.globo {
+    background: #EEEEEE;
+    border-bottom: 1px solid #DDDDDD;
+    padding: 10px;
+    margin-bottom: 10px;
+    position: relative;
+    box-sizing: border-box;
+}
+ 
+.Izquierda{
+    min-width: 60%;
+}
+
+.parrafoexp{
+    display: flex;
+    align-items: flex-start;
+}
+

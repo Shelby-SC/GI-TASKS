@@ -7,13 +7,11 @@ body{
 
 /* Aquí comenzaremos el header*/
 h1 {
-    text-align: center;
     text-transform: uppercase;
+    text-align: center;
 }
 h1 span{
     color:rgba(248, 132, 17, 0.91);
-    text-shadow:45cm;
-    -webkit-text-stroke: black;
 }
 
 
@@ -29,10 +27,9 @@ h1 span{
 }
 
 .container {
-    text-align: left;
     max-width: 800px;
     background-color:rgb(240, 212, 174);
-    margin-top: 50px;
+    margin-top: 80px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 30px;
@@ -42,7 +39,8 @@ h1 span{
 
 .menu ul{
     text-align: center;
-    margin: auto; padding: 0%;
+    margin: auto; 
+    padding: 0%;
     list-style-type: none; /*Esta propiedad sirve para quitar las viñetas de la lista*/
 }
 
@@ -82,6 +80,7 @@ h1 span{
     height: 20px; /*Esto es que tanta separacion hay al desplegarse*/
     margin: 0;
     text-align: left; /*Esto es para la alineación del texto del elemento desplegable*/
+    font-size: 14px;
 }
 
 /* Para hacer comentarios, usar en el teclado: ctrl + K + U */
@@ -94,29 +93,24 @@ h1 span{
 h2 {
     color: orangered;
     text-transform: uppercase;
-    text-align: left;
 }
 
 h2::before {  /* Esto sirve para añadir elementos en el título, parrafos y demás, pueden ser íconos, imágenes o símbolos*/
     content: "// ";
 }
 
-p{
-    text-align: left;
-}
-
 .clearfix:before {
     display: table;
-    line-height: 1.5;
+    line-height: 1;
     content: "";
 }
 
-.pull-flex{
+.pull-left{
     float: left;
 }
 
 .row {
-    padding-left: 10px;
+    padding-left: 20px;
     padding-right: 10px;
 }
 
@@ -137,81 +131,154 @@ p{
     width: 90%;
 }
 
-.containerflex{
-        display: flex; 
-}
+/* *********** */
 
 .education ul{
     list-style: none;
     margin:0;
     padding: 0; 
 }
-    .education .year {
+.education .year {
         font-size: 1.1em;
         font-weight: bold;
-    }
+}
     
-    .education .description {
+.education .description {
         background: #EEEEEE;
-        border-bottom: 1px solid #DDDDDD;
+        border-bottom: 5px solid #DDDDDD;
         padding: 10px;
         margin-bottom: 10px;
         position: relative;
         box-sizing: border-box; 
-    }
+}
 
-    .education .description h3, 
-    .education .description p{
+.education .description h3, .education .description p{
         margin-top: 0;
         margin-bottom: 0;
-    }
-    .education .description p::after {
+}
+
+.education .description p::after {
         content: "";
         position: absolute;
         border: 8px solid transparent ;
         border-right: 8px solid #EEEEEE ;
         top: 5px;
         left: -16px;
-    }
+}
 
-    /* ---------- EXPERIENCIA ---------- */
+/* ---------- EXPERIENCIA ---------- */
 
-    .experience .job .place{
-        font-size: 1.1em;
-        font-weight: bold;
-    }
+.experience .job .place{
+    font-size: 1.2em;
+    font-weight: bold;
+}
 
-   .year{
-        font-size: 0.8em;
-   }
+.year{
+    font-size: 0.8em;
+}
 
-   .profession{
+.profession{
     margin-top: 0;
     margin-bottom: 0;
     margin-left: 3em;
     font-size: 0.9em;
     text-align: justify;
-   }
+}
 
-   .description{
+.description{
     margin-top: 0;
     margin-left: 3em;
     text-align: justify;
-   }
+}
 
-   .containerskill{
-    width: 100%;
-    background-color: #DDDDDD;
-   }
+/* **** Skill *** */
 
-   .skills {
-    text-align: right;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    color: white;
-   }
+.skills {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
 
-   .html{ width: 90%; background-color: green; }
-    .css {width: 80%; background-color: blue }
-    .js {width: 65% background-color: red }
-    .python {width: 60%; background-color: aqua; }
+        .skills-item{
+            color: #ffffff;
+            font-weight: borld;
+            text-transform: uppercase;
+            padding: 2px 0 2px 5px;
+            margin-top: 5px;
+            background: #F0563D;
+        }
+        .skills-item[data-percent="10"] { width: 10% }
+		.skills-item[data-percent="20"] { width: 20% }
+		.skills-item[data-percent="30"] { width: 30% }
+		.skills-item[data-percent="40"] { width: 40% }
+		.skills-item[data-percent="50"] { width: 50% }
+		.skills-item[data-percent="60"] { width: 60% }
+		.skills-item[data-percent="70"] { width: 70% }
+		.skills-item[data-percent="80"] { width: 80% }
+		.skills-item[data-percent="90"] { width: 90% }
+
+    .html { 
+            color: #990909;
+            margin: 3px;
+            list-style-type: none; 
+            text-align: left; 
+            width: 90%; 
+            background-color: orange;}
+    .css { color: #990909;
+        margin: 3px;
+        list-style-type: none; 
+        text-align: left;
+        width: 80%; 
+        background-color: orange;
+    }
+    .js { 
+        color: #990909;
+        margin: 3px;
+        list-style-type:none; 
+        text-align: left;
+        none;width: 65%; 
+        background-color: orange;
+    }
+    .python { 
+        color: #990909;
+        margin: 3px;
+        list-style-type: none;
+        text-align: left; 
+        width: 60%; 
+        background-color: orange;
+    }
+
+/*  **** Fin Skills **** */
+
+.icon-start{
+    background: url(../images/star-grey.png);
+        width: 110px;
+        height: 13px;   
+        float: left;
+}
+
+
+.icon-start-red{
+    background: url(../images/star-red.png);
+    height: 14px;
+    width: 110px;
+    float: left;
+
+}
+
+.obj-start{
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+    border-bottom: 5px;
+}
+
+
+.hobby {
+    background: orange;
+    color: #990909;
+}
+
+.footer-p{
+
+    font-size: 1em;
+}
