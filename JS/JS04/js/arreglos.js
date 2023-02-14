@@ -55,3 +55,20 @@ lista.sort(
     }
 );
 console.log(lista);
+
+
+/* DIFERENCIA ENTRE CONCAT Y PUSH */
+//El método push () agrega uno o más elementos al final de la matriz y devuelve la nueva longitud.
+/*
+var a = [1,2,3,4];
+a.push (5); // a ahora es 1, 2, 3, 4, 5
+
+*/
+
+//El método concat () se utiliza para concatenar dos o más matrices. Este método no cambia la matriz existente, solo devuelve una copia de la matriz conectada.
+
+/*
+var a = [1,2,3,4];
+var b = [5,6];
+var c = a.concat (b); // las matrices a, b no cambian, c se convierte en 1, 2, 3, 4, 5, 6
+*/
