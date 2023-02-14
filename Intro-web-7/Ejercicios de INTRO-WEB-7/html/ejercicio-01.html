@@ -8,12 +8,21 @@
 </head>
 <body>
     <h2>Ejercicio input name</h2>
+    <hr>
+    <p>Haz click en el botón para saludarte con tu nombre!</p>
 
-
-
+    <p id="textNombre"></p>
 <button onclick="helloName()">Change the name!</button>
-<br>
-<p id="textNombre"></p>
+
+    <script>
+    function helloName() {
+        let name = prompt("¿Cuál es tu nombre?");
+        if (name != null) {
+            document.getElementById("textNombre").innerHTML= 
+            "Hello " + name + " ¿Como estás?"
+        }     
+}
+    </script>
 
     <script src="../JS/Ejercicio-01.js"></script>
 </body>
