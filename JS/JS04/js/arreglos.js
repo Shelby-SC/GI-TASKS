@@ -72,3 +72,11 @@ var a = [1,2,3,4];
 var b = [5,6];
 var c = a.concat (b); // las matrices a, b no cambian, c se convierte en 1, 2, 3, 4, 5, 6
 */
+
+let lista = [12,5,80,34];
+let lNueva = lista.map(  //Map lo que hace es tomar los elementos de la lista y multiplicarlos por dos, devolviendolos así
+function(valor) {
+    return valor * 2
+}
+);
+console.log(lNueva);
