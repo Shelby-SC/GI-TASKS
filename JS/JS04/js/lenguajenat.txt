@@ -1,0 +1,18 @@
+
+//Inicio: solicita datos de entrada
+
+Leer el dato ingresado (grados centígrados)
+Comprobar dato ingresado (es número?);
+
+//Condicional:
+Si no es un número ---> Mandar mensaje de error "Este no es un número. Ingrese número"
+Solicitar dato. 
+Leer dato.
+Si es un número ---> proceder al cálculo con la respectiva fórmula.
+//Fin de Condicional
+
+Calcular grados °F (ingresados por usuario) multiplicando °C x 1.8 + 32
+Calcular grados K, sumando °C + 273;
+Imprimir --> "Tus grados en F son..."  "Tus grados en Kelvin son..."
+
+//Fin
