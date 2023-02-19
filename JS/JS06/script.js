@@ -83,17 +83,48 @@ var resultadoQueCambia = document.getElementById("resultado");
 resultadoQueCambia.innerHTML = "Saludos, cambie el texto juas juas"; */
 
 
+/*
+
+Manipulacion del DOM
 
 
+    - Metodos para acceder a elementos 
+
+        - document.getElementById
+        - document.getElementsByTagName
+        - document.getElementosByClassName
 
 
+    - Metodos para crear elementos  
+
+        - document.createElement(etiqueta)
+        - document.createTextNode(texto) - Investigar
 
 
+    - Metodos para insertar elementos
+
+        - parentElement.append
+        - parentElement.insertBefore
+        - parentElement.insertAdjacentElement
 
 
+    - Metodos para modificar elementos
+
+        - node.outerHTML (leer o referenciar el elemento)
+        - node.innerHTML (modificar el elemento)
 
 
+*/
 
+
+//Primer paso: Definir con que voy a interactuar (almacena en una variable)
+
+const textoAModificar = document.querySelector("#h1")
+
+//Crea una function...
+function cambiarColor(color) {
+    textoAModificar.style.color = color;
+}
 
 
 
@@ -101,7 +132,7 @@ resultadoQueCambia.innerHTML = "Saludos, cambie el texto juas juas"; */
 //Construir nuestra calculadora
 
 var input1 = document.getElementById("input1");
-var input1 = document.getElementById("input2");
+var input2 = document.getElementById("input2");
 
 var bottonSuma= document.getElementById("botonSuma");
 var bottonResta= document.getElementById("botonResta");
@@ -109,3 +140,54 @@ var bottonMultiplicacion= document.getElementById("botonMultiplicacion");
 var bottonDivision= document.getElementById("botonDivision");
 
 var resultado = document.getElementById("resultado");
+
+//Construimos las funciones de nuestra calculadora
+
+function suma() {
+    let valor1 = parseInt(input1.value);
+    let valor2 = parseInt(input2.value);
+    let suma = valor1 + valor2;
+    resultado.innerHTML = suma;
+
+}
+
+function resta() {
+    let valor1 = parseInt(input1.value);
+    let valor2 = parseInt(input2.value);
+    let resta = valor1 - valor2;
+    resultado.innerHTML = resta;
+}
+
+function multiplicacion() {
+    let valor1 = parseInt(input1.value);
+    let valor2 = parseInt(input2.value);
+    let multiplicacion = valor1 * valor2;
+    resultado.innerHTML = multiplicacion;
+}
+
+function division() {
+    let valor1 = parseInt(input1.value);
+    let valor2 = parseInt(input2.value);
+    let division = valor1 / valor2;
+    resultado.innerHTML = division;
+
+
+}
+
+/*Como se crea un evento (addEventListener)
+
+    - node.addEventListener ("evento a escuchar", lo que quiero que haga)
+        -node (nodo donde aterrizo el evento)
+        - addEventListener (palabra reservada para usar el evento)
+        - evento a escuchar (click, mouseover, etc)
+        - lo que quiero que haga (la llamada de la función)
+
+*/
+
+bottonSuma.addEventListener("click", suma);
+
+bottonResta.addEventListener("click", resta);
+
+bottonMultiplicacion.addEventListener("click", multiplicacion);
+
+bottonDivision.addEventListener("click", division);

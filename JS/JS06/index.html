@@ -8,7 +8,7 @@
 </head>
 <body>
  
-    <h1>Calculadora del DOM</h1>
+    <h1 id="h1">Calculadora del DOM</h1>
 
     <!-- Aquí ingreso mis números -->
     <input type="number" id="input1" placeholder="ingresa tu primer numero">
@@ -19,7 +19,8 @@
     <br>
     <!-- Aquí ingreso mis botones para la operaciones -->
 
-    <button id="botonSuma" class="botones">Suma</button>
+    <button onmouseover="cambiarColor('blue')" id="botonSuma" class="botones">Suma</button>
+
     <button id="botonResta">Resta</button>
     <button id="botonMultiplicacion">Multiplicacion</button>
     <button id="botonDivision">Division</button>
