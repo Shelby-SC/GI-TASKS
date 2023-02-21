@@ -1,0 +1,13 @@
+NPM = Node Package Manager
+NPM es un gestor de paquetes del entorno node javascript.
+
+Surge esa idea de que el programador no se debe preocupar por configuraciones extra, debe dedicarse al desarrollo y deben existir herramientas que complementen el desarrollo. 
+https://www.npmjs.com/
+
+--> Abrimos el CMD o el git bash o el power shell, tiene que ser en una terminal.
+- Verificamos si por casualidad ya tenemos los paquetes instalados.
+Tecleamos un comando que se llama Node --version
+
+Node es un entorno de ejecución de javascript.
+Cuando abrimos el CMD, podemos teclear "node" y nos sale un mensaje de "Welcome to Node.js ..." y con ésto confirmo que he entrado a un espacio donde puedo ejecutar código de javascript.
+

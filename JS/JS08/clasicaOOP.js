@@ -14,7 +14,7 @@
     }
 
     
-    /* Esto es una instancia, cuando hago el llamado de la clase o activación de ésta */
+    /* Esto es una instancia: Cuando defino o creo cada objeto, basado en la clase anteriormente definida */
     //La instancia es:
 
     /* primer paso: declaracion */ 
