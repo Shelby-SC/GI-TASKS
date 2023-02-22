@@ -1,0 +1,33 @@
+{
+  "name": "first-project",
+  "version": "1.0.0",
+  "description": "This is my first npm project.",
+  "main": "index.js",
+  "dependencies": {
+    "ansi-align": "^3.0.1",
+    "ansi-regex": "^6.0.1",
+    "ansi-styles": "^6.2.1",
+    "boxen": "^7.0.1",
+    "camelcase": "^7.0.1",
+    "chalk": "^5.2.0",
+    "cli-boxes": "^3.0.0",
+    "eastasianwidth": "^0.2.0",
+    "emoji-regex": "^9.2.2",
+    "is-fullwidth-code-point": "^3.0.0",
+    "string-width": "^5.1.2",
+    "strip-ansi": "^7.0.1",
+    "type-fest": "^2.19.0",
+    "widest-line": "^4.0.1",
+    "wrap-ansi": "^8.1.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "first",
+    "project",
+    "experimentation."
+  ],
+  "author": "SSC",
+  "license": "ISC"
+}

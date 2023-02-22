@@ -1,0 +1,33 @@
+NPM = Node Package Manager
+NPM es un gestor de paquetes del entorno node javascript.
+
+Surge esa idea de que el programador no se debe preocupar por configuraciones extra, debe dedicarse al desarrollo y deben existir herramientas que complementen el desarrollo. 
+https://www.npmjs.com/
+
+--> Abrimos el CMD o el git bash o el power shell, tiene que ser en una terminal.
+- Verificamos si por casualidad ya tenemos los paquetes instalados.
+Tecleamos un comando que se llama Node --version
+
+Node es un entorno de ejecución de javascript.
+Cuando abrimos el CMD, podemos teclear "node" y nos sale un mensaje de "Welcome to Node.js ..." y con ésto confirmo que he entrado a un espacio donde puedo ejecutar código de javascript.
+
+**Crear carpeta JS09 y arrastrar en el Visual Code**
+
+Para salirme del node: Ctrl + C y luego ctrl + D
+Para entrar: teclear node.
+
+*Es importante salir de node en el CMD. Luego cerramos el cMD y dentro del visual code, entramos a terminal en las opciones donde está "archivo" y ponemos "New terminal". Tenemos que verificar de que en la ruta aparece la carpeta JS09 que creamos para éste tema.
+
+**** CREAMOS NUEVOS PROYECTO ****
+
+--> npm init + enter. Debe salir al final "Package name: (js09)"
+--> con el primer enter, sale la versión.
+--> con el siguiente "enter" sale para escribir una descripción, ponemos: "Mi primer proyecto en NPM"
+--> Luego me preguntará por el "entry point: (index.js)", se deja tal cual.
+--> Test command... éste se ignora y deja como está.
+--> Git repository.. aquí podría ponerle la dirección a un repositorio git para que se enlace. De momento se ignora porque es una práctica; luego se puede poner de nuevo.
+--> "Keywords"... se ignora de momento.
+--> "author".... puedes poner tu nombre y los de tu equipo.
+--> License: (ISC)"... se puede dejar vacio 
+--> Se le da "yes" para crearlo. 
+--> Verás un "Package.json" ser creado en la carpeta, donde adentro se ve la misma información que nos mostró antes de aceptar el proyecto. Ahí se puede modificar la info
