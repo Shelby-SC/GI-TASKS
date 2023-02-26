@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SA-LPD3 - Ejercicio de lógica de programación 3</title>
+</head>
+<body style="text-align: center;">
+
+    <h1>CALCULANDO EL FACTORIAL</h1>
+
+    <div>
+        <h3>Por favor ingrese un número entero</h3>
+        <!-- Aquí es importante definir en "input" el type= number; pues me estaba fallando al haber puesto "Integer". id= numinsert, me sirvió para llamarlo con DOM desde el javascript; "placeholder" lo que hace es dejarme poner una especie de marca de agua en el campo.-->
+        <input type="number" id="numinsert" placeholder="Factorial de..."> 
+        <!-- Luego definir el botón que hará activar la función del javascript. Aquí es importante considerer que el "onclick" me permite poner la función a llamar -->
+        <button class="botonCalc" onclick="factorial()">Resultado</button>
+        <!-- Luego definí el espacio donde se vería mi resultado, fue importante considerar ponerle una "class" para que lo pueda añadir al javascript con el DOM y que el texto cambie dandome el resultado deseado. -->
+        <p class="resultado">Aquí irá el resulado</p>
+    </div>
+    
+    <!-- Aquí enlazamos el archivo javascript al html -->
+    <script src="./script.js"></script>
+</body>
+</html>
