@@ -1,0 +1,128 @@
+
+body {
+  box-sizing: border-box;
+}
+
+/* aquí voy a crear la cuadrícula de maquetación */
+.layout-container {
+  display: grid;
+  grid-template-columns: repeat(8.333333333333333%);
+  grid-template-rows: repeat(16.66666666666667%);
+  grid-template-areas: 
+      "header header header header header"
+      "navbar navbar navbar navbar navbar"
+      "image image . . . regbox"
+      "footer footer footer footer footer";
+  grid-row-gap: 20px;
+
+}
+
+.regName {
+  border: 1px solid #999;
+  border-radius: 3px;
+  padding: 1rem; 
+  position: relative;
+}
+  /*border: 1px solid #999;
+  boder radius: 3px
+  padding: 1rem;
+  position: relative;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*.form-default {
+    display: flex;
+  flex-wrap: nowrap;
+  font-size: 30px;
+  flex-direction: column;
+}*/
+
+/*.FirstName {
+    display: flex;
+    font-size: 16px;
+    flex-flow: row-reverse;
+    flex-wrap: nowrap;
+    flex-direction: row-reverse;
+    align-items: stretch;*/
+
+/*
+#LastName {
+    display: flex;
+    font-size: 16px;
+    flex-direction: column;
+    flex-wrap: wrap-reverse;
+    flex-flow: row;
+    justify-content: center;
+
+}
+
+#Email {
+    display: flex;
+    font-size: 16px;
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
+    flex-flow: column wrap;
+    justify-content: center;
+
+}
+
+#Password {
+    display: flex;
+    font-size: 16px;
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
+    flex-flow: column wrap;
+    justify-content: center;
+
+} 
+
+/* Responsive layout - makes a one column-layout instead of a two-column layout 
+@media (max-width: 800px) {
+    .form-default {
+      flex: 100%;
+    }
+  } */
+
+  /*
+  .col {
+    display: flex;
+    font-size: 16px;
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
+    flex-flow: column wrap;
+    justify-content: center;
+  } */
