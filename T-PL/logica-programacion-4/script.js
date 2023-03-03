@@ -26,4 +26,3 @@ function fibonacci(){
         document.querySelector(".resultado").innerHTML = sucesion;
     }
 }
-

@@ -1,11 +1,91 @@
+/* CSS DEL NAVBAR */
+#page{
+  font-family: Raleway;
+  color: #ffffff;
+  padding: 0;
+  margin:0;
+  width: 100%;
+  background-color: #ff4d49;;
+  
+}
+#logo{
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: white;
+}
+
+
+
+#index_nav{
+  background-color: #ff4d49;
+  color: #ffffff;
+  
+}
+
+.dropdown-item{
+  background-color: black;
+  color: black;
+  
+}
+
+.navi{
+  color: rgb(255, 255, 255);
+}
+
+
+
+img{
+  max-width: 100%;
+  
+}
+
+#bod{
+  background-color: #ff4d49;
+}
+
+#navy{
+  margin: 0;
+  padding:0;
+  max-width: 100%;
+}
+
+#logo_2{
+  height: 40px;
+  margin-top: 5px;
+  margin-left: 20px;
+}
+
+@media screen and (max-width: 1200px){
+  #urbanot1{
+      content: url(/imgs/urba6.png);
+  }
+}
+/* Aquí empieza el formulario de registro */
+
 
 body {
   box-sizing: border-box;
 }
 
+@media screen and (max-width: 1200px){
+.regImg {
+  background-size: contain;
+    min-height: 100%;
+    min-width: 800px;
+
+    width: 100%;
+    height: auto;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+}
+
 /* aquí voy a crear la cuadrícula de maquetación */
 .layout-container {
   display: grid;
+  border: #999 solid 1px;
   grid-template-columns: repeat(8.333333333333333%);
   grid-template-rows: repeat(16.66666666666667%);
   grid-template-areas: 
@@ -13,16 +93,52 @@ body {
       "navbar navbar navbar navbar navbar"
       "image image . . . regbox"
       "footer footer footer footer footer";
-  grid-row-gap: 20px;
+  grid-row-gap: 2px;
+  grid-column-gap: 3px;
 
 }
 
-.regName {
+.regRow1 {
+  text-align: center;
   border: 1px solid #999;
   border-radius: 3px;
-  padding: 1rem; 
-  position: relative;
+  /*padding: auto; */
+  margin: 120px 100px 30px 500px;
+  grid-column: 3;
+  grid-row: 1;
+
 }
+
+.regRow2 {
+  text-align: center;
+  border: #999 solid 1px;
+  /* padding: 2rem;*/
+  margin: 40px 100px 30px 500px;
+  grid-column: 3;
+  grid-row: 2;
+}
+
+.regRow3 {
+  border: #999 solid 1px;
+  grid-column: 3;
+  grid-row: 3;
+  /* padding: 2rem;*/
+  margin: 40px 100px 30px 500px;
+  align-items: center;
+  text-align: center;
+}
+
+.regRow4 {
+  text-align: center;
+  border: #999 solid 1px;
+  /* padding: 2rem;*/
+  margin: 40px 100px 0px 500px;
+  grid-column: 3;
+  grid-row: 4;
+
+}
+
+
   /*border: 1px solid #999;
   boder radius: 3px
   padding: 1rem;
