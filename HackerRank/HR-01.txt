@@ -1,0 +1,17 @@
+HACKER RANK FIRST EXERCISE, SOLUTION:
+
+/* ***** START ********* */
+
+public class Solution { //Declaración de la clase "Solution"
+
+    public static void main(String[] args) { //Declaración del método. 
+
+        System.out.println("Hello, World."); //Declaración del output línea 1.
+        System.out.println("Hello, Java.");  //Declaración del output línea 2.
+    }
+}
+
+/* ***** OUTPUT ******** */
+
+Hello, World.
+Hello, Java.

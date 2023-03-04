@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adivinar el número secreto</title>
+</head>
+<body>
+    <section style="text-align: center;">
+        <h1>¡ADIVINA EL NÚMERO SECRETO!</h1>
+        <h3>Por favor introduce el número <i>del al 100,</i> que crees que tengo en mente ;D </h3>
+        <input type="number" id="userNum" placeholder="Estoy pensando en...">
+        <button onclick="guessNumber()" class="buttonNum">¡dime que si es!</button>
+        <p id="mensaje">Aquí verás la respuesta :D </p>
+        <p id="intentos">Estos son tus intentos</p>
+        <p id="ingresados"></p>
+    </section>
+
+    <script src="./script.js"></script>
+</body>
+</html>
