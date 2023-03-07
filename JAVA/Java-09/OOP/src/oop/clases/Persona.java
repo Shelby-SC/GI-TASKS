@@ -46,4 +46,8 @@ public class Persona {
 	double altura; 
 	double peso; 
 	String zodiaco;
+	public String datosPersona() {
+		// TODO Auto-generated method stub
+		return null;
+	}
 }
